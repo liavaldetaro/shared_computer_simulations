@@ -213,7 +213,4 @@ iv:Tf/spotWeight/Values              = 150 54023 54036 54036 54036 54023 54036 5
 
 #Total number of particles scaled down by 1.666667e+03
 
-s:Gr/ViewA/Type              = "OpenGL"
-
-Ts/UseQt = "True"
 
