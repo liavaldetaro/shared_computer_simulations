@@ -128,11 +128,7 @@ s:Sc/Dose/IfOutputFileAlreadyExists  = "Overwrite"
 b:Sc/Dose/PreCalculateStoppingPowerRatios = "True"
 d:Sc/Dose/MinProtonEnergyForStoppingPowerRatio = 0.0 MeV
 d:Sc/Dose/MaxProtonEnergyForStoppingPowerRatio = 250.0 MeV
-<<<<<<< HEAD
 s:Sc/Dose/OutputFile = "vol3_output/dose"
-=======
-s:Sc/Dose/OutputFile = "vol3_dose/"
->>>>>>> 52d1fa57b1b27bcf1037f35c9475d97c5e22652b
 
 s:Sc/Fluence/Quantity                   = "DoseToWater"
 s:Sc/Fluence/Component                  = "Patient"
@@ -140,7 +136,6 @@ s:Sc/Fluence/IfOutputFileAlreadyExists  = "Overwrite"
 b:Sc/Fluence/PreCalculateStoppingPowerRatios = "True"
 d:Sc/Fluence/MinProtonEnergyForStoppingPowerRatio = 0.0 MeV
 d:Sc/Fluence/MaxProtonEnergyForStoppingPowerRatio = 250.0 MeV
-<<<<<<< HEAD
 s:Sc/Fluence/OutputFile = "vol3_output/fluence"
 
 s:Sc/LET_f/Quantity                   = "ProtonLET"
@@ -148,18 +143,6 @@ s:Sc/LET_f/Component		      = "Patient"
 s:Sc/LET_f/WeightBy 		      = "Track" 
 s:Sc/LET_f/IfOutputFileAlreadyExists  = "Overwrite"
 s:Sc/LET_f/OutputFile                 = "vol3_output/let"
-=======
-s:Sc/Fluence/OutputFile = "vol3/fluence"
-
-s:Sc/LET_f/Quantity                   = "ProtonLET"
-s:Sc/LET_f/WeightBy = "Track" 
-d:Sc/LET_f/MaxScoredLET = 100 MeV/mm/(g/cm3)
-d:Sc/LET_f/NeglectSecondariesBelowDensity = 0.1 g/cm3
-s:Sc/LET_f/IfOutputFileAlreadyExists  = "Overwrite"
-s:Sc/LET_f/OutputFile = "vol3/let"
-
-
->>>>>>> 52d1fa57b1b27bcf1037f35c9475d97c5e22652b
 
 ##############################################
 ###  T  I  M  E    F  E  A  T  U  R  E  S  ###
