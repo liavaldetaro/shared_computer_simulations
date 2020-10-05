@@ -127,7 +127,7 @@ s:Sc/Dose/IfOutputFileAlreadyExists  = "Overwrite"
 b:Sc/Dose/PreCalculateStoppingPowerRatios = "True"
 d:Sc/Dose/MinProtonEnergyForStoppingPowerRatio = 0.0 MeV
 d:Sc/Dose/MaxProtonEnergyForStoppingPowerRatio = 250.0 MeV
-s:Sc/Dose/OutputFile = sobp_output/dose
+s:Sc/Dose/OutputFile = sobp_output_dose
 
 s:Sc/Fluence/Quantity                   = "Fluence"
 s:Sc/Fluence/Component                  = "Patient"
@@ -135,13 +135,13 @@ s:Sc/Fluence/IfOutputFileAlreadyExists  = "Overwrite"
 b:Sc/Fluence/PreCalculateStoppingPowerRatios = "True"
 d:Sc/Fluence/MinProtonEnergyForStoppingPowerRatio = 0.0 MeV
 d:Sc/Fluence/MaxProtonEnergyForStoppingPowerRatio = 250.0 MeV
-s:Sc/Fluence/OutputFile = sobp_output/fluence
+s:Sc/Fluence/OutputFile = sobp_output_fluence
 
 s:Sc/LET_f/Quantity                   = "ProtonLET"
 s:Sc/LET_f/WeightBy = "Track" 
 d:Sc/LET_f/MaxScoredLET = 100 MeV/mm/(g/cm3)
 s:Sc/LET_f/IfOutputFileAlreadyExists  = "Overwrite"
-s:Sc/LET_f/OutputFile = sobp/let
+s:Sc/LET_f/OutputFile = sobp_let
 
 ##############################################
 ###  T  I  M  E    F  E  A  T  U  R  E  S  ###
