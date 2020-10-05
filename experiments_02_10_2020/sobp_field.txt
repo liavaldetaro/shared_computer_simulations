@@ -127,7 +127,11 @@ s:Sc/Dose/IfOutputFileAlreadyExists  = "Overwrite"
 b:Sc/Dose/PreCalculateStoppingPowerRatios = "True"
 d:Sc/Dose/MinProtonEnergyForStoppingPowerRatio = 0.0 MeV
 d:Sc/Dose/MaxProtonEnergyForStoppingPowerRatio = 250.0 MeV
+<<<<<<< HEAD
 s:Sc/Dose/OutputFile = "sobp_output/dose"
+=======
+s:Sc/Dose/OutputFile = "sobp_output/"
+>>>>>>> 52d1fa57b1b27bcf1037f35c9475d97c5e22652b
 
 s:Sc/Fluence/Quantity                   = "Fluence"
 s:Sc/Fluence/Component                  = "Patient"
@@ -135,13 +139,21 @@ s:Sc/Fluence/IfOutputFileAlreadyExists  = "Overwrite"
 b:Sc/Fluence/PreCalculateStoppingPowerRatios = "True"
 d:Sc/Fluence/MinProtonEnergyForStoppingPowerRatio = 0.0 MeV
 d:Sc/Fluence/MaxProtonEnergyForStoppingPowerRatio = 250.0 MeV
+<<<<<<< HEAD
 s:Sc/Fluence/OutputFile = "sobp_output/fluence"
+=======
+s:Sc/Fluence/OutputFile = "sobp_output_fluence/"
+>>>>>>> 52d1fa57b1b27bcf1037f35c9475d97c5e22652b
 
 s:Sc/LET_f/Quantity                   = "ProtonLET"
 s:Sc/LET_f/Component		      = "Patient"
 s:Sc/LET_f/WeightBy 		      = "Track" 
 s:Sc/LET_f/IfOutputFileAlreadyExists  = "Overwrite"
+<<<<<<< HEAD
 s:Sc/LET_f/OutputFile                 = "sobp_output/let"
+=======
+s:Sc/LET_f/OutputFile = "sobp_let/"
+>>>>>>> 52d1fa57b1b27bcf1037f35c9475d97c5e22652b
 
 ##############################################
 ###  T  I  M  E    F  E  A  T  U  R  E  S  ###
@@ -212,3 +224,8 @@ iv:Tf/spotWeight/Values              = 150 54023 54036 54036 54036 54023 54036 5
 
 
 #Total number of particles scaled down by 1.666667e+03
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 52d1fa57b1b27bcf1037f35c9475d97c5e22652b
