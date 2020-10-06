@@ -1,6 +1,5 @@
 includeFile = DosimeterChemComp.txt
 
- 
 
 ##############################################
 ###               TOPAS SETUP              ###
@@ -80,7 +79,7 @@ d:So/Field/SigmaY                    = 3.2344999999999997 mm
 u:So/Field/SigmaYprime               = 0.0038 
 u:So/Field/CorrelationX              = 0.36392912740193223 
 u:So/Field/CorrelationY              = 0.9132624419295262 
-i:So/Field/NumberOfHistoriesInRun    = 10000000
+i:So/Field/NumberOfHistoriesInRun    = 5000000
 
  
 
@@ -117,5 +116,5 @@ s:Sc/LET_f/OutputFile                           = "95mev_output/let"
 
  
 
-#Total number of simulated particles is 10000000
-#Total number of particles scaled down by 0.001547129558061932
+#Total number of simulated particles is 5000000
+#Total number of particles scaled down by 0.000773564779030966

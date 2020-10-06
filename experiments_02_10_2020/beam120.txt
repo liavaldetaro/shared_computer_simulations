@@ -40,7 +40,7 @@ d:Ge/Patient/HLY		     = 25 mm
 d:Ge/Patient/HLZ		     = 50 mm
 d:Ge/Patient/TransX       = -0 mm
 d:Ge/Patient/TransY       = -0 mm
-d:Ge/Patient/TransZ       = -53.0 mm
+d:Ge/Patient/TransZ       = -80.0 mm
 i:Ge/Patient/XBins		 = 100
 i:Ge/Patient/YBins		 = 100
 i:Ge/Patient/ZBins		 = 200
@@ -49,8 +49,8 @@ s:Ge/water_slab/Type                    = "TsBox"
 s:Ge/water_slab/Material                = "G4_WATER"
 d:Ge/water_slab/HLX		     = 25 mm
 d:Ge/water_slab/HLY		     = 25 mm
-d:Ge/water_slab/HLZ		     = 1.5 mm
-d:Ge/water_slab/TransZ       = -1.5 mm
+d:Ge/water_slab/HLZ		     = 15.0 mm
+d:Ge/water_slab/TransZ       = -15.0 mm
 
  
 
@@ -87,7 +87,7 @@ d:So/Field/SigmaY                    = 2.971 mm
 u:So/Field/SigmaYprime               = 0.0031 
 u:So/Field/CorrelationX              = 0.21015839306256087 
 u:So/Field/CorrelationY              = 0.9120422145253579 
-i:So/Field/NumberOfHistoriesInRun    = 10000000
+i:So/Field/NumberOfHistoriesInRun    = 5000000
 
  
 
@@ -124,5 +124,5 @@ s:Sc/LET_f/OutputFile                           = "120mev_output/let"
 
  
 
-#Total number of simulated particles is 10000000
-#Total number of particles scaled down by 0.0013081708435718447
+#Total number of simulated particles is 5000000
+#Total number of particles scaled down by 0.0006540854217859224

@@ -1,6 +1,9 @@
 includeFile = DosimeterChemComp.txt
 
  
+s:Gr/ViewA/Type             = "OpenGL"
+d:Gr/ViewA/Theta       = 45. deg
+d:Gr/ViewA/Phi         = 45. deg
 
 ##############################################
 ###               TOPAS SETUP              ###
@@ -40,7 +43,7 @@ d:Ge/Patient/HLY		     = 25 mm
 d:Ge/Patient/HLZ		     = 50 mm
 d:Ge/Patient/TransX       = -0 mm
 d:Ge/Patient/TransY       = -0 mm
-d:Ge/Patient/TransZ       = -51.0 mm
+d:Ge/Patient/TransZ       = -60.0 mm
 i:Ge/Patient/XBins		 = 100
 i:Ge/Patient/YBins		 = 100
 i:Ge/Patient/ZBins		 = 200
@@ -49,8 +52,8 @@ s:Ge/water_slab/Type                    = "TsBox"
 s:Ge/water_slab/Material                = "G4_WATER"
 d:Ge/water_slab/HLX		     = 25 mm
 d:Ge/water_slab/HLY		     = 25 mm
-d:Ge/water_slab/HLZ		     = 0.5 mm
-d:Ge/water_slab/TransZ       = -0.5 mm
+d:Ge/water_slab/HLZ		     = 5.0 mm
+d:Ge/water_slab/TransZ       = -5.0 mm
 
  
 
@@ -87,7 +90,7 @@ d:So/Field/SigmaY                    = 3.5665 mm
 u:So/Field/SigmaYprime               = 0.0053 
 u:So/Field/CorrelationX              = 0.27913303637771814 
 u:So/Field/CorrelationY              = 0.7221286129575795 
-i:So/Field/NumberOfHistoriesInRun    = 10000000
+i:So/Field/NumberOfHistoriesInRun    = 5000000
 
  
 
@@ -124,5 +127,5 @@ s:Sc/LET_f/OutputFile                           = "75mev_output/let"
 
  
 
-#Total number of simulated particles is 10000000
-#Total number of particles scaled down by 0.0023108578330115763
+#Total number of simulated particles is 5000000
+#Total number of particles scaled down by 0.0011554289165057882
