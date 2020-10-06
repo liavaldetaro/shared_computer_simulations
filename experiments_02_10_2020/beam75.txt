@@ -1,9 +1,6 @@
 includeFile = DosimeterChemComp.txt
 
  
-s:Gr/ViewA/Type             = "OpenGL"
-d:Gr/ViewA/Theta       = 45. deg
-d:Gr/ViewA/Phi         = 45. deg
 
 ##############################################
 ###               TOPAS SETUP              ###
