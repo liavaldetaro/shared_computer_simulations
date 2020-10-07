@@ -87,7 +87,7 @@ d:So/Field/SigmaY                    = 3.5665 mm
 u:So/Field/SigmaYprime               = 0.0053 
 u:So/Field/CorrelationX              = 0.27913303637771814 
 u:So/Field/CorrelationY              = 0.7221286129575795 
-i:So/Field/NumberOfHistoriesInRun    = 5000000
+i:So/Field/NumberOfHistoriesInRun    = 500000
 
  
 
@@ -118,5 +118,5 @@ s:Sc/LET_f/OutputFile                           = "75mev_output/let"
 
  
 
-#Total number of simulated particles is 5000000
-#Total number of particles scaled down by 0.0011554289165057882
+#Total number of simulated particles is 500000
+#Total number of particles scaled down by 0.00011554289165057881
