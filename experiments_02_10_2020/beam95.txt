@@ -89,25 +89,11 @@ i:So/Field/NumberOfHistoriesInRun    = 500000
 ##############################################
 
 
-s:Sc/Dose/Quantity                             = "DoseToWater"
-s:Sc/Dose/Component                            = "Patient"
-s:Sc/Dose/IfOutputFileAlreadyExists            = "Overwrite"
-s:Sc/Dose/OutputFile                           = "95mev_output/dose"
-
- 
-
-s:Sc/Fluence/Quantity                             = "Fluence"
-s:Sc/Fluence/Component                            = "Patient"
-s:Sc/Fluence/IfOutputFileAlreadyExists            = "Overwrite"
-s:Sc/Fluence/OutputFile                           = "95mev_output/fluence"
-
- 
-
-s:Sc/LET_f/Quantity                             = "ProtonLET"
-s:Sc/LET_f/WeightBy                             = "Track"
-s:Sc/LET_f/Component                            = "Patient"
-s:Sc/LET_f/IfOutputFileAlreadyExists            = "Overwrite"
-s:Sc/LET_f/OutputFile                           = "95mev_output/let"
+s:Sc/LET_dose/Quantity                             = "ProtonLET"
+s:Sc/LET_dose/WeightBy                             = "Dose"
+s:Sc/LET_dose/Component                            = "Patient"
+s:Sc/LET_dose/IfOutputFileAlreadyExists            = "Overwrite"
+s:Sc/LET_dose/OutputFile                           = "95mev_output/let_dose"
 
  
 
