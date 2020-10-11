@@ -168,7 +168,12 @@ def main():
         print("s:Sc/LET_dose/WeightBy                             = \"Dose\"", file=text_file)
         print("s:Sc/LET_dose/Component                            = \"Patient\"", file=text_file)
         print("s:Sc/LET_dose/IfOutputFileAlreadyExists            = \"Overwrite\"", file=text_file)
-        print("s:Sc/LET_dose/OutputFile                           = \"{}mev_output/let_dose\"".format(int(E_probeam)), file=text_file)
+        print("s:Sc/LET_dose/OutputFile                           = \"{}mev_output/let_dose"
+              ""
+              ""
+              ""
+              ""
+              " \"".format(int(E_probeam)), file=text_file)
         print("\n \n", file=text_file)
 
         print("#Total number of simulated particles is {}".format(nhist), file=text_file)
