@@ -141,7 +141,7 @@ s:Sc/LET_f/Quantity                   = "ProtonLET"
 s:Sc/LET_f/Component		      = "Patient"
 s:Sc/LET_f/WeightBy 		      = "Dose" 
 s:Sc/LET_f/IfOutputFileAlreadyExists  = "Overwrite"
-s:Sc/LET_f/OutputFile                 = "sobp_output/let"
+s:Sc/LET_f/OutputFile                 = "sobp_output/let_dose"
 
 ##############################################
 ###  T  I  M  E    F  E  A  T  U  R  E  S  ###
