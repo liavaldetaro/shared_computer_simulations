@@ -18,8 +18,8 @@ echo "writing the topas files ..."
 git add --all
 git commit -m 'sobp'
 git push
-#~/topas/bin/topas vol3_field.txt
-#git add --all
-#git commit -m 'vol3'
-#git push
+~/topas/bin/topas vol3_field.txt
+git add --all
+git commit -m 'vol3'
+git push
 
