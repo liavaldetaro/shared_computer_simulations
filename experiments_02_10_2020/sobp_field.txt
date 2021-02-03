@@ -117,13 +117,13 @@ u:So/Field/SigmaYprime               = Tf/SigmaYprime/Value
 u:So/Field/CorrelationX              = Tf/CorrelationX/Value 
 u:So/Field/CorrelationY              = Tf/CorrelationY/Value 
 
-i:So/Field/NumberOfHistoriesInRun    = Tf/spotWeight/Value
+i:So/Field/NumberOfHistoriesInRun    = 2 * Tf/spotWeight/Value
 
 
 ##############################################
 ###       S C O R E R    S E T U P         ###
 ##############################################
-s:Sc/Dose/Quantity                   = "DoseToWater"
+s:Sc/Dose/Quantity                   = "DoseToMedium"
 s:Sc/Dose/Component                  = "Patient"
 s:Sc/Dose/IfOutputFileAlreadyExists  = "Overwrite"
 #b:Sc/Dose/PreCalculateStoppingPowerRatios = "True"
