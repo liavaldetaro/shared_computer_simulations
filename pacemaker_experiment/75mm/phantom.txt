@@ -1,0 +1,71 @@
+##############################################
+###           V A R I A B L E S            ###
+##############################################
+
+includeFile			     = DosimeterChemComp.txt
+includeFile  = all_fields.txt
+
+##############################################
+###         T O P A S    S E T U P         ###
+##############################################
+i:Ts/ShowHistoryCountAtInterval         = 10000
+i:Ts/NumberOfThreads                    = 0 # 0 for using all cores, -1 for all but one
+b:Ts/DumpParameters                     = "False"
+
+
+##############################################
+###         W O R L D    S E T U P         ###
+##############################################
+#s:Ge/World/Type            = "TsBox"
+#s:Ge/World/Material        = "Air"
+#d:Ge/World/HLX             = 90. cm
+#d:Ge/World/HLY             = 90. cm
+#d:Ge/World/HLZ             = 90. cm
+#b:Ge/World/Invisible       = "True"
+
+#### Dosimeter ####
+s:Ge/Dosimeter/Parent                  = "World"
+s:Ge/Dosimeter/Type                    = "TsBox"
+d:Ge/Dosimeter/HLX = 2.5 cm
+d:Ge/Dosimeter/HLY = 2.5 cm
+d:Ge/Dosimeter/HLZ = 3.5 cm
+d:Ge/Dosimeter/TransX                  = 0 mm
+d:Ge/Dosimeter/TransY                  = -140 mm
+d:Ge/Dosimeter/TransZ                  = -10 mm
+d:Ge/Dosimeter/RotX                    = 0.00 deg
+d:Ge/Dosimeter/RotY                    = 0.00 deg
+d:Ge/Dosimeter/RotZ                    = 0.00 deg
+i:Ge/Dosimeter/Xbins = 10
+i:Ge/Dosimeter/Ybins = 10
+i:Ge/Dosimeter/Zbins = 10
+s:Ge/Dosimeter/Color                   = "Red"
+s:Ge/Dosimeter/Material		     = "FlexDos"
+b:Ge/Dosimeter/Isparallel	= "True"
+
+
+### Solid water slabs #####
+s:Ge/Water1/Parent                  = "World"
+s:Ge/Water1/Type                    = "TsBox"
+d:Ge/Water1/HLX 		    = 2.5 cm
+d:Ge/Water1/HLY 		    = 2.5 cm
+d:Ge/Water1/HLZ 		    = 3.5 cm
+d:Ge/Water1/TransX                  = 25 mm #+ Rt/Plan/IsoCenterX mm
+d:Ge/Water1/TransY                  = -140 mm
+d:Ge/Water1/TransZ                  = -10 mm
+d:Ge/Water1/RotX                    = 0.00 deg
+d:Ge/Water1/RotY                    = 0.00 deg
+d:Ge/Water1/RotZ                    = 0.00 deg
+s:Ge/Water1/Material		     = "G4_WATER"
+
+
+
+
+i:Gr/ViewA/WindowSizeX = 900
+i:Gr/ViewA/WindowSizeY = 900
+#i:Gr/ShowOnlyOutlineIfVoxelCountExceeds = 10000
+s:Gr/ViewA/Projection       = "Perspective"
+s:Gr/ViewA/Type        = "OpenGL"
+#iv:Ge/Patient/ShowSpecificSlicesZ = 1 -1
+Ts/UseQt = "True"
+Ge/QuitIfOverlapDetected = "False"
+#b:Ge/Patient/IgnoreInconsistentFrameOfReferenceUID = "True"
