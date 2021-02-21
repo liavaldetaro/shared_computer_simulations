@@ -162,18 +162,6 @@ d:Ge/water4/RotZ                 = 0.0 deg
 s:Ge/water4/Material	         = "G4_WATER"
 
 
-#### Graphics #####
-s:Gr/ViewA/Type        = "OpenGL"
-i:Gr/ViewA/WindowSizeX = 900
-i:Gr/ViewA/WindowSizeY = 900
-d:Gr/ViewA/Theta       =90 deg
-d:Gr/ViewA/Phi         = 0 deg
-#Ts/UseQt = "True"
-#Ge/QuitIfOverlapDetected = "False"
-#b:Ge/Patient/IgnoreInconsistentFrameOfReferenceUID = "True"
-b:Ts/PauseBeforeQuit = "True"
-
-
 s:Ge/Gantry/Parent                   = "DCM_to_IEC"
 s:Ge/Gantry/Type                     = "Group"
 d:Ge/Gantry/TransX                   = 0.00 mm
@@ -270,32 +258,13 @@ i:So/Field/NumberOfHistoriesInRun    = Tf/spotWeight/Value
 
 
 ##############################################
-###       S C O R E R    S E T U P         ###
-##############################################
-s:Ge/ScoringBox/Parent               = "World"
-s:Ge/ScoringBox/Type                 = "TsBox"
-d:Ge/ScoringBox/HLX                  = 37.00 mm
-d:Ge/ScoringBox/HLY                  = 37.00 mm
-d:Ge/ScoringBox/HLZ                  = 37.50 mm
-i:Ge/ScoringBox/Xbins                = 296 
-i:Ge/ScoringBox/Ybins                = 296 
-i:Ge/ScoringBox/Zbins                = 300 
-b:Ge/ScoringBox/isParallel           = "True"
-d:Ge/ScoringBox/TransX               = Ge/Patient/DicomOriginX - Rt/Plan/IsoCenterX mm
-d:Ge/ScoringBox/TransY               = Ge/Patient/DicomOriginY - Rt/Plan/IsoCenterY mm
-d:Ge/ScoringBox/TransZ               = Ge/Patient/DicomOriginZ - Rt/Plan/IsoCenterZ mm
-d:Ge/ScoringBox/RotX                 = 0.0 deg
-d:Ge/ScoringBox/RotY                 = 0.0 deg
-d:Ge/ScoringBox/RotZ                 = 0.0 deg
-
-##############################################
 ###             DOSE AND LET               ###
 ##############################################
 s:Sc/DoseAtPhantom/Quantity          = "DoseToMedium"
-s:Sc/DoseAtPhantom/Component         = "ScoringBox"
+s:Sc/DoseAtPhantom/Component         = "Scorer1"
 s:Sc/DoseAtPhantom/IfOutputFileAlreadyExists = "Overwrite"
 s:Sc/LETatPhantom/Quantity           = "ProtonLET"
-s:Sc/LETatPhantom/Component          = "ScoringBox"
+s:Sc/LETatPhantom/Component          = "Scorer1"
 d:Sc/LETatPhantom/MaxScoredLET       = 100 MeV/mm/(g/cm3)
 d:Ph/Default/CutForElectron          = 0.25 mm
 s:Sc/LETatPhantom/IfOutputFileAlreadyExists = "Overwrite"
@@ -304,13 +273,13 @@ s:Sc/LETatPhantom/IfOutputFileAlreadyExists = "Overwrite"
 ###             DICOM EXPORT               ###
 ##############################################
 s:Sc/Dose/Quantity                   = "DoseToMedium"
-s:Sc/Dose/Component                  = "ScoringBox"
+s:Sc/Dose/Component                  = "Scorer1"
 s:Sc/Dose/OutputType                 = "DICOM"
 b:Sc/Dose/DICOMOutput32BitsPerPixel  = "F"
 s:Sc/Dose/OutputFile                 = "Dose_dicom"
 s:Sc/Dose/IfOutputFileAlreadyExists = "Overwrite"
 s:Sc/LET/Quantity           = "ProtonLET"
-s:Sc/LET/Component          = "ScoringBox"
+s:Sc/LET/Component          = "Scorer1"
 d:Sc/LET/MaxScoredLET       = 100 MeV/mm/(g/cm3)
 s:Sc/LET/OutputType                 = "DICOM"
 b:Sc/LET/DICOMOutput32BitsPerPixel  = "F"
